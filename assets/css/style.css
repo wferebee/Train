@@ -1,0 +1,83 @@
+.jumbotron{
+    background-color: black;
+    color: yellow;
+    height: inherit;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f00;
+}
+body{
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    /* set the bodys height pretty small in hopes that my layout will look the same on most computers. idk if this will actually work. crossing my finger*/
+    background-color: black;
+    background-image: url("../images/123.jpg"); 
+    background-repeat: repeat-y;
+    background-size: 100%;
+    height: fit-content;
+    width: 100%;
+}
+td{
+    text-align: left;
+}
+tr:hover {
+    background-color: black;}
+#train-form{
+    width: 17%;
+   position: relative;
+   font-size: 10px;
+    bottom: 17px;
+}
+.panel.panel-primary{
+    height: 30px;
+}
+.table.table-hover:hover{
+    background-color: black;
+    color: #f00;
+}
+#train-card{
+    width: 85%;
+    float: right;
+    overflow-y: auto;
+    height: 433px;
+    position: relative;
+    bottom: 15px;
+    left: ;
+    flex: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+#train-card::-webkit-scrollbar { width: 0 !important }
+.panel{
+    color: yellow;
+   font-weight: bolder;  
+}
+.panel-primary>.panel-heading {
+    color: yellow;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f00;
+}
+.btn-primary {
+    color: yellow;
+    background-color:black;
+    border-color: red;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #f00;
+}
+.table>thead>tr>th {
+    border-bottom: 2px solid #f00;
+}
+#footer{
+    color: blue;
+    font-size: 12px;
+    float: right;
+    position: relative;
+    left: 95px;
+}

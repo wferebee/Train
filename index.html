@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Star Wars Inter-Galactic Space Traveling Trains</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+  
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+  		<h1 class="text-center">Star Wars Inter-Galactic Space Travel Schedule</h1>
+  		<p class="text-center">May the Force Be With You </p>
+	</div>
+	<div class="row" id = "train-card">
+		<div class="col-lg-12">
+			<div class="panel panel-primary">
+  				<div class="panel-heading">
+                    <h3 class="panel-title">Current Ship Schedule</h3>
+  				</div>
+  				<div class="panel-body">
+                    <table class="table table-hover" id="trainTable">
+                        <thead>
+                            <tr>
+                                <th id = "one">Ship Name</th>
+                                <th id ="two">Destination</th>
+                                <th>Frequency (min)</th>
+                                <th>Next Arrival</th>
+                                <th>Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id="AddTrain">
+                        </tbody>
+                    </table>
+  				</div>
+			</div>
+		</div>
+    </div>
+	<div class="row" id="train-form">
+		<div class="col-lg-12" >
+			<div class="panel panel-primary">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">Add Ship</h3>
+  				</div>
+  				<div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="train-input">Ship Name</label>
+                            <input type="text" class="form-control" id="train-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination-input">Destination</label>
+                            <input type="text" class="form-control" id="destination-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="firstTrain-input">First Ship Time (HH:mm - military time)</label>
+                            <input type="text" class="form-control" id="firstTrain-input" placeholder="24:00 military">
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency-input">Frequency (min)</label>
+                            <input type="text" class="form-control" id="frequency-input">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="addtrains">Submit</button>
+                    </form>
+  				</div>
+			</div>
+		</div>
+    </div>
+    <div id = "footer"> 
+        <p>William Ferebee</p>
+    </div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="assets\javascript\javascript.js"></script>
+</body>
+</html>
