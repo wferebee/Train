@@ -9,11 +9,11 @@
   
  ## Technologies Used
   
-  html
-  css
-  javascript
-  JQuery
-  Moment.js
-  Firebase
+  *html
+  *css
+  *javascript
+  *JQuery
+  *Moment.js
+  *Firebase
   
  
